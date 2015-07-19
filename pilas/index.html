@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script type="text/javascript" src="pilas.js"></script>
+    </head>
+    <body>
+        <h1>Pilas</h1>
+
+        <script type="text/javascript">
+            var pila = new Pila();
+            var aux = new Pila();
+            var valor;
+
+            pila.push(5);
+            pila.push(4);
+            pila.push(3);
+            pila.push(2);
+
+            while ( pila.empty() == false) {
+                valor = pila.pop();
+                document.write( valor + '<br/>');
+                aux.push(valor);
+            }
+            while( aux.empty() == false){
+                pila.push( aux.pop() );
+            }
+
+            document.write('<hr/>');
+
+            while ( pila.empty() == false) {
+                valor = pila.pop();
+                document.write( valor + '<br/>');
+                aux.push(valor);
+            }
+            while( aux.empty() == false){
+                pila.push( aux.pop() );
+            }
+
+        </script>
+    </body>
+</html>
