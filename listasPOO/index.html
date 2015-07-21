@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listas Enlazadas POO</title>
+        <script src="listasPOO.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>Listas Enlazadas POO</h1>
+        <script type="text/javascript">
+
+            var lista = new Lista();
+
+            lista.insertFirst(4);
+            lista.insertFirst(5);
+            lista.insertFirst(6);
+            lista.insertFirst(7);
+
+            lista.viewAll();
+
+            lista.insertLast(8);
+            lista.insertLast(9);
+            lista.insertLast(10);
+
+            lista.viewAll();
+
+            console.log(lista.pNodo);
+
+        </script>
+    </body>
+</html>
