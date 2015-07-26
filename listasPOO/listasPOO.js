@@ -74,6 +74,7 @@ function Lista( options ){
 
     this.viewAll = function(){
         var aux = L;
+		document.write( "L -> ");
         while(aux != null){
             document.write( aux.data + " -> ");
             aux = aux.sig;
